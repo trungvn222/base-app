@@ -1,0 +1,11 @@
+// Required
+@import './variable';
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import './mixins';
+@import './general';
+
+// components
+@import './components/hamburger';
+@import './components/header';
+@import './components/footer';

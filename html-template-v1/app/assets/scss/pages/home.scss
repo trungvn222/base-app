@@ -1,0 +1,78 @@
+@import '../app';
+
+.cart {
+    position: relative;
+    span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 100%;
+        display: block;
+        background: #53A46D;
+        font-size: 12px;
+        color: #fff;
+        top: -9px;
+        left: 15px;
+    }
+}
+
+.logo {
+    border-bottom: 1px solid #e3e3e3;
+    .change-store {
+        padding-left: 75px;
+        font-size: 12px;
+    }
+    &-inner {
+        font-size: 13px;
+        color: #E8EBEC;
+        .brand-name {
+            font-size: 17px;
+            color: #000;
+        }
+    }
+}
+
+.favorite-items {
+    color: #f00;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.sidebar-icon {
+    width: 75px;
+    i {
+        font-size: 25px;
+    }
+}
+
+.dasboard-item-heading {
+    font-size: 17px;
+}
+.dasboard-item-menu {
+    color: #53A46D !important;
+    cursor: pointer;
+}
+
+.main-content-heading {
+    color: #53A46D;
+    font-size: 25px;
+    &-underline {
+        width: 20px;
+        height: 2px;
+        background: #53A46D;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.sidebar {
+    border-right: 1px solid #e3e3e3;
+}
+
+.card-body-item-title {
+    font-size: 17px;
+}
+.card-body-item-list-item-label {
+    color: #53A46D;
+}

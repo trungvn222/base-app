@@ -1,0 +1,29 @@
+{
+	"name": "app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "NODE_ENV=production gulp --require @babel/register --gulpfile tasks",
+		"build": "NODE_ENV=production gulp build --require babel-register --gulpfile tasks"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.0",
+		"@babel/register": "^7.9.0",
+		"babel-register": "^6.26.0",
+		"browser-sync": "^2.26.7",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"node-sass": "^4.13.1",
+		"webpack": "^4.42.1",
+		"webpack-dev-middleware": "^3.7.2"
+	},
+	"dependencies": {
+		"webpack-hot-middleware": "^2.25.0"
+	}
+}

@@ -1,0 +1,22 @@
+/*
+    media-breakpoint-[down|up|only|between]
+    VP: xs, sm, md, lg, xl
+    @include media-breakpoint-up(xs) { ... }
+    @include media-breakpoint-down(xs) { ... }
+    @include media-breakpoint-only(xs) { ... }
+    @include media-breakpoint-between(md, xl) { ... }
+
+    $zindex-dropdown:          1000 !default;
+    $zindex-sticky:            1020 !default;
+    $zindex-fixed:             1030 !default;
+    $zindex-modal-backdrop:    1040 !default;
+    $zindex-modal:             1050 !default;
+    $zindex-popover:           1060 !default;
+    $zindex-tooltip:           1070 !default;
+    
+*/
+$grid-breakpoints: (xs: 0,
+sm: 576px,
+md: 768px,
+lg: 1025px,
+xl: 1200px);

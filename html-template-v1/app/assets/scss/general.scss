@@ -1,0 +1,48 @@
+$font-pt: 'Roboto', sans-serif;
+
+html, body{
+    font-family: $font-pt;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.reset-ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        list-style-type: none;
+    }
+}
+
+.post {
+    > *:first-child {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    > *:last-child {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+#header {
+    position: relative;
+    z-index: 50;
+}
+
+#main-content,#footer {
+    position: relative;
+    z-index: 40;
+}

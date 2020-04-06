@@ -1,0 +1,65 @@
+@mixin hamburger(
+    $width:40px, 
+    $height: 26px, 
+    $bar-height:4px, 
+    $bar-bg-color:#000,
+    $transition-time: 0.4s,
+    $rotation:45deg
+    ) {
+    // calc x,y
+    $translateY: ($height / 2);
+    $translateX: 0;
+
+    // store this
+    $parent: &;
+
+    width: $width;
+    height: $height;
+    position: relative;
+    &:hover {
+        #{$parent}__bar {
+            &:nth-child(1){
+                transform: translateY(-$bar-height);
+            }
+            &:nth-child(3){
+                transform: translateY($bar-height);
+            }
+        }
+    }
+
+    &__bar {
+        display: block;
+        position: absolute;
+        width: $width;
+        height: $bar-height;
+        background-color: $bar-bg-color;
+        left: 0px;
+        transition: all $transition-time;
+
+        &:nth-child(1){
+            top: 0;
+        }
+        &:nth-child(2){
+            top: 50%;
+        }
+        &:nth-child(3){
+            top: calc(100%);
+        }
+    }
+
+    &.active {
+        #{$parent} {
+            &__bar {
+                &:nth-child(1){
+                    transform: translate($translateX, $translateY) rotate($rotation);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:nth-child(3){
+                    transform: translate($translateX*-1, $translateY*-1) rotate($rotation*-1);
+                }
+            }
+        }
+    }
+}

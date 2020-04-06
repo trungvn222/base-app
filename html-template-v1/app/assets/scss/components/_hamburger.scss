@@ -1,0 +1,13 @@
+@include media-breakpoint-up(xs){
+    $hamburger-width: 30px;
+    $hamburger-height: 18px;
+    $hamburger-bar-height: 2px;
+    $hamburger-bar-background-color: #fff;
+
+    $hamburger-transition-time: 0.4s;
+    $hamburger-rotation: 45deg;
+
+    .hamburger {
+        @include hamburger($hamburger-width, $hamburger-height, $hamburger-bar-height, $hamburger-bar-background-color,$hamburger-transition-time, $hamburger-rotation);
+    }
+}
