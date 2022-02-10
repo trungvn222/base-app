@@ -19,7 +19,7 @@
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
-		"node-sass": "^4.13.1",
+		"node-sass": "^7.0.0",
 		"webpack": "^4.42.1",
 		"webpack-dev-middleware": "^3.7.2"
 	},
